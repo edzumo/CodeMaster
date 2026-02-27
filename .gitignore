@@ -1,0 +1,20 @@
+# Attempt logs
+backend/attempts/
+
+# Test outputs / compiled files
+backend/test/
+*.class
+*.csv
+*.txt
+output
+
+# Node
+node_modules/
+
+# Python
+env/
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/

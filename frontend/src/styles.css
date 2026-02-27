@@ -1,0 +1,212 @@
+/* ================= BASE ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: #0e0e11;
+  color: #e4e4e7;
+}
+
+/* Remove link underline everywhere */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================= LAYOUT ================= */
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 230px;
+  background: #151519;
+  padding: 32px 20px;
+  border-right: 1px solid #232327;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin: 0 0 40px 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #facc15;
+}
+
+.sidebar a {
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #a1a1aa;
+  margin-bottom: 6px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sidebar a:hover {
+  background: #1f1f23;
+  color: #ffffff;
+}
+
+.content {
+  flex: 1;
+  padding: 48px 60px;
+  overflow-y: auto;
+}
+
+/* ================= HEADERS ================= */
+
+h2 {
+  margin: 0 0 28px 0;
+  font-weight: 600;
+}
+
+/* ================= CARDS ================= */
+
+.card {
+  background: #16161b;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #232327;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* ================= PROBLEM PAGE ================= */
+
+.problem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.editor-container {
+  height: 420px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #232327;
+  margin-bottom: 18px;
+}
+
+.result-box {
+  padding: 14px;
+  border-radius: 8px;
+  background: #141418;
+  border: 1px solid #232327;
+  margin-bottom: 20px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #facc15;
+  color: #111;
+}
+
+.btn-primary:hover {
+  background: #eab308;
+}
+
+.btn-secondary {
+  background: #2a2a30;
+  color: #e4e4e7;
+}
+
+/* ================= TESTCASE ================= */
+
+.testcase {
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #121216;
+  border: 1px solid #232327;
+}
+
+.testcase.pass {
+  border-left: 4px solid #22c55e;
+}
+
+.testcase.fail {
+  border-left: 4px solid #ef4444;
+}
+
+.testcase-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.muted {
+  font-size: 13px;
+  color: #a1a1aa;
+}
+
+.terminal {
+  background: #000;
+  color: #22c55e;
+  padding: 14px;
+  font-family: monospace;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.testcase-summary {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.case-box {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.case-box.pass {
+  background: #16a34a;
+}
+
+.case-box.fail {
+  background: #dc2626;
+}
+
+.terminal {
+  margin-top: 20px;
+  background: #111;
+  color: #ff4d4d;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 14px;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #333;
+}
+
+.terminal-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff6666;
+}
