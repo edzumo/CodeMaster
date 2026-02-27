@@ -1,6 +1,8 @@
 # Attempt logs
 backend/attempts/
 
+backend/db.sqlite3
+
 # Test outputs / compiled files
 backend/test/
 *.class
